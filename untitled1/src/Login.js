@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 class Login extends Component{
 
-    onClickSubmit(){
-        document.getElementById();
-    }
     render(){
         return(
-            null
+           <p>HELLO</p>
         )
     }
 }
+
+
+export default Login;

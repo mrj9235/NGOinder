@@ -1,29 +1,24 @@
 import React, { Component } from 'react';
-import Login from './Login.js';
-import logo from './logo.svg';
+import Login from "./Login.js";
 import './App.css';
 
+import {
+    BrowserRouter,
+    Route,
+    Link
+} from 'react-browser-router';
+
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-           FUCK MEEEEEEEEEEEEEEEEEE
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (<BrowserRouter>
+            <div>
+                <Link to="/">Login</Link>
+
+                <Route path="/" component={Login} />
+            </div>
+        </BrowserRouter>);
+    }
 }
 
 export default App;
