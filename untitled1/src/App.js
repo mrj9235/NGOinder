@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import Login from "./Login.js";
+import Homepage from "./Homepage/Homepage.js";
+import Login from "./Login/Login.js";
+import Navbar from "./Navbar/Navbar.js";
 import './App.css';
+import './Homepage/Homepage.css';
+import './'
 
 import {
     BrowserRouter,
@@ -13,9 +17,10 @@ class App extends Component {
     render() {
         return (<BrowserRouter>
             <div>
-                <Link to="/">Login</Link>
+                <Navbar />
 
-                <Route path="/" component={Login} />
+                <Route path="/" component={Homepage} />
+                <Route path='/login' component={Login} />
             </div>
         </BrowserRouter>);
     }
