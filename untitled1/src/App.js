@@ -4,12 +4,12 @@ import Login from "./Login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
 import './App.css';
 import './Homepage/Homepage.css';
-import './'
+import './Navbar/Navbar.css'
+import './Login/Login.css';
 
 import {
     BrowserRouter,
-    Route,
-    Link
+    Route
 } from 'react-browser-router';
 
 

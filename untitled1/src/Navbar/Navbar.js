@@ -5,7 +5,7 @@ class Navbar extends Component {
     render() {
         return (
             <div data-collapse="medium" data-animation="default" data-duration="400" className="navigation-bar w-nav">
-                <div className="w-container">
+                <div className="w-container" >
                     <a href="/" className="w-nav-brand w--current">
                         <div className="site-name">NGOinder</div>
                     </a>
