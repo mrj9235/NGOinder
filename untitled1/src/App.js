@@ -17,7 +17,7 @@ class App extends Component {
     render() {
         return (<BrowserRouter>
             <div>
-                <Navbar />
+                <div class='navbar-header'><h1><Navbar/></h1></div>
 
                 <Route exact path="/" component={Homepage} />
                 <Route path='/login' component={Login} />
