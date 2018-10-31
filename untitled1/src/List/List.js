@@ -1,11 +1,11 @@
-import React, {Componenet} from 'react';
+import React, {Component} from 'react';
 
-class List extends Componenet{
+class List extends Component{
 
     render(){
         return(
             <body>
-                //begin header
+            {/*begin header**/}
                 <h1>
                     <span>
                         NGOinder
@@ -182,3 +182,5 @@ class List extends Componenet{
         )
     }
 }
+
+export default List;
