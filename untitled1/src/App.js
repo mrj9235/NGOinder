@@ -3,10 +3,11 @@ import Homepage from "./Homepage/Homepage.js";
 import Login from "./Login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
 import Profile from "./Profile/Profile";
+import List from "./List/List.js";
 import './App.css';
 import './Homepage/Homepage.css';
 import './Profile/Profile.css';
-import './'
+import './List/List.css';
 
 import {
     BrowserRouter,
@@ -23,6 +24,7 @@ class App extends Component {
                 <Route exact path="/" component={Homepage} />
                 <Route path='/login' component={Login} />
                 <Route path='/profile' component={Profile}/>
+                <Route path='/list' component={List}/>
             </div>
         </BrowserRouter>);
     }
