@@ -2,15 +2,24 @@ import React, {Component} from 'react';
 
 class List extends Component{
 
+    makeList(arr){
+
+        const arrSorted = arr.sort();
+        let list = <ul></ul>;
+
+        for(let x = 1; x < arrSorted.length; x++){
+            list += <li> + arrSorted[x] + </li>
+        }
+
+        return (
+            list
+        );
+    }
+
+
     render(){
         return(
             <body>
-            {/*begin header**/}
-                <h1>
-                    <span>
-                        NGOinder
-                    </span>
-                </h1>
                 <h2>
                     All NGOs
                 </h2>
@@ -23,9 +32,7 @@ class List extends Component{
                 <h3>
                     A
                 </h3>
-                <ul type = "disc">
-                    Apples Are Good
-                </ul>
+                {this.makeList(['Apples', 'Amanda', 'Army'])}
                 <h3>
                     B
                 </h3>
