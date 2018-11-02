@@ -4,16 +4,18 @@ class List extends Component{
 
     makeList(arr){
 
-        const arrSorted = arr.sort();
-        let list = <ul></ul>;
+        if(arr instanceof Array){
+            const arrSorted = arr.sort();
+            let list = <ul> </ul>;
 
-        for(let x = 1; x < arrSorted.length; x++){
-            list += <li> + arrSorted[x] + </li>
+            for(let x = 0; x < arrSorted.length; x++){
+                list += arrSorted[x] + "\n"
+            }
+
+            return (
+                list
+            );
         }
-
-        return (
-            list
-        );
     }
 
 
