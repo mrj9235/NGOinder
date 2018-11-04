@@ -1,3 +1,43 @@
-.body{
+.sub-head-button{
+    border-radius: 0;
+    padding: 4px;
+    font-size: larger;
+    background-color: gray;
+    border: none;
+}
+.sub-header{
+    background-color: gray;
+}
 
+#main-page{
+    display: flex;
+    width: 100%;
+}
+
+#news{
+    background-color: #549f63;
+    height: 25%;
+    width: 50%;
+}
+
+#messages{
+    background-color: pink;
+    height: 25%;
+    width: 50%;
+}
+
+#extra-info{
+    display: block;
+    float: right;
+    margin: 0 auto;
+}
+
+#news-head{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#message-head{
+    text-align: center;
+    text-decoration: underline;
 }

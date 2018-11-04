@@ -55,12 +55,21 @@ class Profile extends Component{
                     <button className='sub-head-button' onClick={this.onDeactivateClick}>Deactivate</button>
                     <button className='sub-head-button' onClick={this.onAccountsClick}>Linked Accounts</button>
                 </div>
-
-                <div id='options' hidden={false}>Look at this options page</div>
-                <div id='password' hidden={true}>Look at this password page</div>
-                <div id='liked' hidden={true}>Look at this liked page</div>
-                <div id='deactivate' hidden={true}>Look at this decativation page</div>
-                <div id='accounts' hidden={true}>Look at this account page</div>
+                <div id='main-page'>
+                    <div id='options' hidden={false}>Look at this options page</div>
+                    <div id='password' hidden={true}>Look at this password page</div>
+                    <div id='liked' hidden={true}>Look at this liked page</div>
+                    <div id='deactivate' hidden={true}>Look at this decativation page</div>
+                    <div id='accounts' hidden={true}>Look at this account page</div>
+                    <div id='extra-info'>
+                        <div id='news'>
+                            <h3 id='news-head'>News</h3>
+                        </div>
+                        <div id='messages'>
+                            <h3 id='message-head'>Messages</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
