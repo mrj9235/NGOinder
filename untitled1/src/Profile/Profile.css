@@ -14,22 +14,44 @@
     width: 100%;
 }
 
-#news{
-    background-color: #549f63;
-    height: 25%;
-    width: 50%;
+#settings{
+    width: 75%;
+    height: 100%
 }
 
-#messages{
+#news{
+    background-color: #549f63;
+    margin: 0;
+    height: 50%;
+    border:1px solid black;
+
+}
+
+#messages {
     background-color: pink;
-    height: 25%;
-    width: 50%;
+    margin: 0;
+    height: 50%;
+    border:1px solid black;
+
+}
+
+#options{
+    font-size: 20px;
+
+}
+
+.option{
+    border:1px solid black;
+    height: 40px;
+    line-height: 40px;
 }
 
 #extra-info{
     display: block;
     float: right;
     margin: 0 auto;
+    width: 25%;
+    height: 100%;
 }
 
 #news-head{
@@ -40,4 +62,8 @@
 #message-head{
     text-align: center;
     text-decoration: underline;
+}
+.body{
+    height: 100%;
+    width: 100%;
 }
