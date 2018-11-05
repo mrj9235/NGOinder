@@ -71,7 +71,11 @@ class Profile extends Component{
                             <div className='option'> Payment </div>
 
                         </div>
-                        <div id='password' hidden={true}>Look at this password page</div>
+                        <div id='password' hidden={true}>
+                            <input type='text' placeholder='Enter Old Password'/>
+                            <input type='text' placeholder='Enter New Password'/>
+                            <input type='text' placeholder='Confirm New Password'/>
+                        </div>
                         <div id='liked' hidden={true}>Look at this liked page</div>
                         <div id='deactivate' hidden={true}>Look at this deactivation page</div>
                         <div id='accounts' hidden={true}>Look at this account page</div>
