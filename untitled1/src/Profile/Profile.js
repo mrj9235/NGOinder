@@ -9,6 +9,10 @@ class Profile extends Component{
         document.getElementById('liked').hidden = true;
         document.getElementById('deactivate').hidden = true;
         document.getElementById('accounts').hidden = true;
+        document.getElementsByTagName('input').item(0).type = 'hidden';
+        document.getElementsByTagName('input').item(1).type = 'hidden';
+        document.getElementsByTagName('input').item(2).type = 'hidden';
+
     };
 
     onPasswordClick(){
@@ -17,6 +21,11 @@ class Profile extends Component{
         document.getElementById('liked').hidden = true;
         document.getElementById('deactivate').hidden = true;
         document.getElementById('accounts').hidden = true;
+        document.getElementsByTagName('input').item(0).type = 'text';
+        document.getElementsByTagName('input').item(1).type = 'text';
+        document.getElementsByTagName('input').item(2).type = 'text';
+
+
 
     };
 
@@ -26,6 +35,9 @@ class Profile extends Component{
         document.getElementById('liked').hidden = false;
         document.getElementById('deactivate').hidden = true;
         document.getElementById('accounts').hidden = true;
+        document.getElementsByTagName('input').item(0).type = 'hidden';
+        document.getElementsByTagName('input').item(1).type = 'hidden';
+        document.getElementsByTagName('input').item(2).type = 'hidden';
     };
 
     onDeactivateClick() {
@@ -34,6 +46,9 @@ class Profile extends Component{
         document.getElementById('liked').hidden = true;
         document.getElementById('deactivate').hidden = false;
         document.getElementById('accounts').hidden = true;
+        document.getElementsByTagName('input').item(0).type = 'hidden';
+        document.getElementsByTagName('input').item(1).type = 'hidden';
+        document.getElementsByTagName('input').item(2).type = 'hidden';
     };
 
     onAccountsClick(){
@@ -42,6 +57,9 @@ class Profile extends Component{
         document.getElementById('liked').hidden = true;
         document.getElementById('deactivate').hidden = true;
         document.getElementById('accounts').hidden = false;
+        document.getElementsByTagName('input').item(0).type = 'hidden';
+        document.getElementsByTagName('input').item(1).type = 'hidden';
+        document.getElementsByTagName('input').item(2).type = 'hidden';
     };
 
 
@@ -72,9 +90,9 @@ class Profile extends Component{
 
                         </div>
                         <div id='password' hidden={true}>
-                            <input type='text' placeholder='Enter Old Password'/>
-                            <input type='text' placeholder='Enter New Password'/>
-                            <input type='text' placeholder='Confirm New Password'/>
+                            <input type='hidden' placeholder='Enter Old Password'/>
+                            <input type='hidden' placeholder='Enter New Password'/>
+                            <input type='hidden' placeholder='Confirm New Password'/>
                         </div>
                         <div id='liked' hidden={true}>Look at this liked page</div>
                         <div id='deactivate' hidden={true}>Look at this deactivation page</div>

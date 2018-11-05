@@ -6,7 +6,7 @@ import Profile from "./Profile/Profile";
 import './App.css';
 import './Homepage/Homepage.css';
 import './Profile/Profile.css';
-import './'
+import './Navbar/Navbar.css';
 
 import {
     BrowserRouter,

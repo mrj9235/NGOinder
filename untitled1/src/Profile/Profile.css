@@ -3,7 +3,7 @@
     padding: 4px;
     font-size: larger;
     background-color: gray;
-    border: none;
+    border: 1px solid black;
     outline: none;
 }
 .sub-header{
@@ -13,6 +13,7 @@
 #main-page{
     display: flex;
     width: 100%;
+    padding-top: 10px;
 }
 
 #settings{
@@ -82,5 +83,5 @@ input{
 .body{
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 38px;
 }
