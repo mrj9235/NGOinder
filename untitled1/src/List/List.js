@@ -2,19 +2,18 @@ import React, {Component} from 'react';
 
 class List extends Component{
 
-    makeList(arr){
+    makeList(listID, arr){
 
         if(arr instanceof Array){
-            const arrSorted = arr.sort();
-            let list = <ul> </ul>;
+            let arrSorted = arr.sort();
+            //let list = <ul style="list-style-type:disc"> </ul>;
 
             for(let x = 0; x < arrSorted.length; x++){
-                list += arrSorted[x] + "\n"
+                let newLi = document.createElement("li");
+                newLi.innerHTML = arrSorted[x];
+                let newList = document.getElementById(listID);
+                newList.appendChild(newLi);
             }
-
-            return (
-                list
-            );
         }
     }
 
@@ -34,18 +33,21 @@ class List extends Component{
                 <h3>
                     A
                 </h3>
-                {this.makeList(['Apples', 'Amanda', 'Army'])}
+                <ul id="aNGO" type = "disc">
+                    /**{this.makeList("aNGO",['Apples', 'Amanda', 'Army'])}*/
+                    Abolition 2000
+                </ul>
                 <h3>
                     B
                 </h3>
                 <ul type = "disc">
-                    Beavers Bro
+                    Baha'i International Community
                 </ul>
                 <h3>
                     C
                 </h3>
                 <ul type = "disc">
-                    Cancer Sucks Foundation
+                    Center of Concern
                 </ul>
                 <h3>
                     D
@@ -63,13 +65,13 @@ class List extends Component{
                     F
                 </h3>
                 <ul type = "disc">
-                    Fire Lovers Anonymous
+                    The Franklin and Eleanor Roosevelt Insititute
                 </ul>
                 <h3>
                     G
                 </h3>
                 <ul type = "disc">
-                    Girl Scouts is a Pyramid Scheme
+                    GCS (Global Cooperation Society) International
                 </ul>
                 <h3>
                     H
@@ -81,25 +83,25 @@ class List extends Component{
                     I
                 </h3>
                 <ul type = "disc">
-                    I Want to Die
+                    Information Habitat: Where Information Lives
                 </ul>
                 <h3>
                     J
                 </h3>
                 <ul type = "disc">
-                    Just Recycle Asshole
+                    Jungle Restoration Foundation
                 </ul>
                 <h3>
                     K
                 </h3>
                 <ul type = "disc">
-                    Kool Kids Klub
+                    Koala Protection Agency
                 </ul>
                 <h3>
                     L
                 </h3>
                 <ul type = "disc">
-                    Lemme Smash, Becky
+                    The League of Women Voters
                 </ul>
                 <h3>
                     M
@@ -111,61 +113,61 @@ class List extends Component{
                     N
                 </h3>
                 <ul type = "disc">
-                    Not Gonna Lie, I Hate This Project
+                    National Council on Family Relations
                 </ul>
                 <h3>
                     O
                 </h3>
                 <ul type = "disc">
-                    Oh My God, Everything's On Fire
+                    Organic Stuff Committee
                 </ul>
                 <h3>
                     P
                 </h3>
                 <ul type = "disc">
-                    Please Vaccinate Your Kids
+                    Pathways To Peace
                 </ul>
                 <h3>
                     Q
                 </h3>
                 <ul type = "disc">
-                    Quietly Dying On the Inside
+                    Quaker United Nations Office
                 </ul>
                 <h3>
                     R
                 </h3>
                 <ul type = "disc">
-                    Remember When You Weren't Depressed
+                    Recycling for the Future
                 </ul>
                 <h3>
                     S
                 </h3>
                 <ul type = "disc">
-                    Stop Being an Asshole, Love Nature
+                    Society for Conservation and Protection of Environment (SCOPE)
                 </ul>
                 <h3>
                     T
                 </h3>
                 <ul type = "disc">
-                    The Dan's Running Out of Names Group
+                    Together Foundation for Global Unity
                 </ul>
                 <h3>
                     U
                 </h3>
                 <ul type = "disc">
-                    Udder Abuse Prevention Group
+                    UNA-USA - United Nations Association-United States of America
                 </ul>
                 <h3>
                     V
                 </h3>
                 <ul type = "disc">
-                    Very Quickly Approaching Critical Levels of Self Hatred
+                    Voter Rights Group
                 </ul>
                 <h3>
                     W
                 </h3>
                 <ul type = "disc">
-                    What Would You Do For a Better President
+                    Wainwright House
                 </ul>
                 <h3>
                     X
@@ -177,16 +179,14 @@ class List extends Component{
                     Y
                 </h3>
                 <ul type = "disc">
-                    You Need to Realise Climate Change is Real
+                    Yachay Wasi
                 </ul>
                 <h3>
                     Z
                 </h3>
                 <ul type = "disc">
-                    Zoos Are Cool I Guess
+                    Zoologist Appreciation Foundation
                 </ul>
-                <a href="#" className="previous">&laquo; Previous</a>
-                <a href="#" className="next">Next &raquo;</a>
             </body>
         )
     }
