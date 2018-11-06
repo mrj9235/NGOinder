@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import Homepage from "./Homepage/Homepage.js";
 import Login from "./Login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
+import Profile from "./Profile/Profile";
 import './App.css';
 import './Homepage/Homepage.css';
+import './Profile/Profile.css';
+import './'
 import './Navbar/Navbar.css'
 import './Login/Login.css';
 
@@ -21,6 +24,7 @@ class App extends Component {
 
                 <Route exact path="/" component={Homepage} />
                 <Route path='/login' component={Login} />
+                <Route path='/profile' component={Profile}/>
             </div>
         </BrowserRouter>);
     }
