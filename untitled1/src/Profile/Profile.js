@@ -94,16 +94,45 @@ class Profile extends Component{
                             <input type='hidden' placeholder='Enter New Password'/>
                             <input type='hidden' placeholder='Confirm New Password'/>
                         </div>
-                        <div id='liked' hidden={true}>Look at this liked page</div>
+                        <div id='liked' hidden={true}>
+                            <h2>Previously Liked NGOs:</h2>
+                            <br/>
+                            <br/>
+                            <img className='liked-img' src={require('../images/images.png')}/>
+                            <img className='liked-img' src={require('../images/abstract-white-pigeon-and-hand.png')}/>
+                            <img className='liked-img' src={require('../images/charity-logo-with-human-icons_1025-131.jpg')}/>
+                            <img className='liked-img' src={require('../images/NGO logo.png')}/>
+                        </div>
                         <div id='deactivate' hidden={true}>Look at this deactivation page</div>
                         <div id='accounts' hidden={true}>Look at this account page</div>
                     </div>
                     <div id='extra-info'>
                         <div id='news'>
                             <h3 id='news-head'>News</h3>
+                            <a className='news-link' href='/profile'>Look at this beautiful news story</a>
+                            <br/><br/>
+                            <a className='news-link' href='/profile'>Look at this beautiful news story</a>
+                            <br/><br/>
+                            <a className='news-link' href='/profile'>Look at this beautiful news story</a>
+                            <br/><br/>
+                            <a className='news-link' href='/profile'>Look at this beautiful news story</a>
+                            <br/><br/>
+                            <a className='news-link' href='/profile'>Look at this beautiful news story</a>
+                            <br/><br/>
                         </div>
                         <div id='messages'>
                             <h3 id='message-head'>Messages</h3>
+
+                            <div className='message'>
+                                <img className='message-img' src={require('../images/images.png')}/>
+                                <p>Hello! Thank you for liking our NGO!</p>
+                            </div>
+                            <br/>
+                            <div className='message'>
+                                <img className='message-img' src={require('../images/abstract-white-pigeon-and-hand.png')}/>
+                                <p>Hello! Thank you for donating to...</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
