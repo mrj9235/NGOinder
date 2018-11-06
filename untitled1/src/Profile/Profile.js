@@ -88,6 +88,13 @@ class Profile extends Component{
                             <div className='option'> Messaging </div>
                             <div className='option'> Payment </div>
 
+                            <div className='buttons'>
+                                <button className='option-button'>Reset to Default</button>
+                                <button className='option-button'>Undo</button>
+                                <button className='option-button'>Save Changes</button>
+                            </div>
+
+
                         </div>
                         <div id='password' hidden={true}>
                             <input type='hidden' placeholder='Enter Old Password'/>
@@ -103,8 +110,16 @@ class Profile extends Component{
                             <img className='liked-img' src={require('../images/charity-logo-with-human-icons_1025-131.jpg')}/>
                             <img className='liked-img' src={require('../images/NGO logo.png')}/>
                         </div>
-                        <div id='deactivate' hidden={true}>Look at this deactivation page</div>
-                        <div id='accounts' hidden={true}>Look at this account page</div>
+                        <div id='deactivate' hidden={true}>
+                            <h3>Please don't deactivate your account</h3>
+                            <button>Deactivate</button>
+                        </div>
+                        <div id='accounts' hidden={true}>
+                            <h3>Link Social Medias!</h3>
+                            <a  href="https://www.facebook.com" target="_blank" ><img className='media-link' src={require('../images/facebook.png')}/></a>
+                            <a  href="https://www.gmail.com" target="_blank"> <img className='media-link' src={require('../images/email.png')}/></a>
+                            <a  href="https://www.instagram.com" target="_blank" ><img  className='media-link' src={require('../images/instagram.png')}/></a>
+                        </div>
                     </div>
                     <div id='extra-info'>
                         <div id='news'>
