@@ -8,13 +8,15 @@ import Search from "./Search/Search.js";
 import './App.css';
 import './Homepage/Homepage.css';
 import './Profile/Profile.css';
-import './List/List.css';
+import './List/List.css'; 
 import './Search/Search.css';
+import './'
+import './Navbar/Navbar.css'
+import './Login/Login.css';
 
 import {
     BrowserRouter,
-    Route,
-    Link
+    Route
 } from 'react-browser-router';
 
 
@@ -23,8 +25,8 @@ class App extends Component {
         return (<BrowserRouter>
             <div>
                 <Navbar />
-                <Route exact path="/" component={Homepage} />
-                <Route path='/login' component={Login} />
+                <Route exact path="/" component={Login} />
+                <Route path='/home' component={Homepage} />
                 <Route path='/profile' component={Profile}/>
                 <Route path='/list' component={List}/>
                 <Route path='/search' component={Search}/>

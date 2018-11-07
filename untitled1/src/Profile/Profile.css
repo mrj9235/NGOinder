@@ -1,3 +1,134 @@
-.body{
+.sub-head-button{
+    border-radius: 0;
+    padding: 4px;
+    font-size: larger;
+    background-color: gray;
+    border: 1px solid black;
+    outline: none;
+}
+.sub-header{
+    background-color: gray;
+}
 
+#main-page{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#settings{
+    width: 75%;
+    height: 100%
+}
+
+#news{
+    margin: 0;
+    height: 50%;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#password{
+    display: inline-grid;
+    width: 75%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+input{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 40%;
+}
+
+.news-link{
+    color: #7090A0;
+
+}
+
+#messages {
+    margin: 0;
+    height: 50%;
+    border-top: 1px solid black;
+    margin-bottom: 500px;
+}
+
+#options{
+    font-size: 20px;
+
+}
+
+.option{
+    border:1px solid black;
+    height: 40px;
+    line-height: 40px;
+}
+
+#extra-info{
+    display: block;
+    float: right;
+    margin: 0 auto;
+    width: 25%;
+    height: 100%;
+}
+
+#news-head{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#message-head{
+    text-align: center;
+    text-decoration: underline;
+}
+.body{
+    height: 100%;
+    margin: 0;
+    padding-top: 45px;
+}
+
+.message{
+    border: 1px solid black;
+    border-radius: 90px;
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.message-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 90px;
+    padding-top: 6px;
+}
+
+.liked-img{
+    height: 125px;
+    width: 125px;
+    padding-left: 50px;
+}
+
+#liked{
+    padding-left: 10px;
+}
+
+.media-link{
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+}
+
+.option-button{
+    Margin-top: 26px;
+    height: 50px;
+    font-size: 15px;
+    float: right;
+    margin-left: 9px;
+    background-color: #7090a0;
+    color:white;
+    border: none;
+    outline: none;
 }
