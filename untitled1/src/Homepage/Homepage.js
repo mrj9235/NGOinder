@@ -5,7 +5,20 @@ class Homepage extends Component{
     render(){
         return(
             <div className="body">
-
+                <div className="display">
+                    <div className="liked-NGOs">
+                        <h2>liked-NGOs</h2>
+                        <p>Some text..</p>
+                    </div>
+                    <div className="display-NGOs">
+                        <h2>display-NGOs</h2>
+                        <p>Some text..</p>
+                    </div>
+                    <div className="messages">
+                        <h2>Messages</h2>
+                        <p>Some text..</p>
+                    </div>
+                </div>
             </div>
         )
     }

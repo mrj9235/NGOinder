@@ -6,11 +6,9 @@ class Navbar extends Component {
         return (
             <div>
                 <ul>
-                    <li><a class="active" href='/home'>NGOinder</a></li>
-                    <li><a href='/contact'>Contact</a></li>
-                    <li><a href='/about'>About</a></li>
+                    <li><a class="active" href='/home'>NGOfinder</a></li>
+                    <li><a href='/profile'>Profile</a></li>
                     {window.location.pathname === "/" || window.location.pathname === "/login"? <li><a href='/login'>Log In</a></li> : <li><a href='/'>Sign out</a></li>}
-
                 </ul>
             </div>
         )

@@ -36,7 +36,11 @@ ul.list li input{
     background-color: #e2e2e2;
 }
 
-ul.list li input[type='button']{
+.submit{
     background-color: #2e5270;
     color: #ffffff;
+}
+
+.highlight{
+    color: #0000EE;
 }

@@ -22,7 +22,7 @@ class App extends Component {
             <div>
                 <div class='navbar-header'><h1><Navbar/></h1></div>
 
-                <Route exact path="/" component={Homepage} />
+                <Route exact path="/home" component={Homepage} />
                 <Route path='/login' component={Login} />
                 <Route path='/profile' component={Profile}/>
             </div>
