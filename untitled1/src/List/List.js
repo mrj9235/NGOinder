@@ -12,7 +12,7 @@ class List extends Component{
                 let newLi = document.createElement("li");
                 newLi.innerHTML = arrSorted[x];
                 let newList = document.getElementById(listID);
-                newList.appendChild(newLi);
+                /**newList.appendChild(newLi);*/
             }
         }
     }
