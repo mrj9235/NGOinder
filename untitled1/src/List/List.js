@@ -65,7 +65,7 @@ class List extends Component{
                     F
                 </h3>
                 <ul type = "disc">
-                    The Franklin and Eleanor Roosevelt Insititute
+                    The Franklin and Eleanor Roosevelt Institute
                 </ul>
                 <h3>
                     G
