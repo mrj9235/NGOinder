@@ -12,6 +12,7 @@ class Profile extends Component{
         document.getElementsByTagName('input').item(0).type = 'hidden';
         document.getElementsByTagName('input').item(1).type = 'hidden';
         document.getElementsByTagName('input').item(2).type = 'hidden';
+        document.getElementsByClassName('option-button').item(3).hidden = true;
 
     };
 
@@ -24,9 +25,7 @@ class Profile extends Component{
         document.getElementsByTagName('input').item(0).type = 'text';
         document.getElementsByTagName('input').item(1).type = 'text';
         document.getElementsByTagName('input').item(2).type = 'text';
-
-
-
+        document.getElementsByClassName('option-button').item(3).hidden = false;
     };
 
     onLikedClick(){
@@ -38,6 +37,8 @@ class Profile extends Component{
         document.getElementsByTagName('input').item(0).type = 'hidden';
         document.getElementsByTagName('input').item(1).type = 'hidden';
         document.getElementsByTagName('input').item(2).type = 'hidden';
+        document.getElementsByClassName('option-button').item(3).hidden = true;
+
     };
 
     onDeactivateClick() {
@@ -49,6 +50,8 @@ class Profile extends Component{
         document.getElementsByTagName('input').item(0).type = 'hidden';
         document.getElementsByTagName('input').item(1).type = 'hidden';
         document.getElementsByTagName('input').item(2).type = 'hidden';
+        document.getElementsByClassName('option-button').item(3).hidden = true;
+
     };
 
     onAccountsClick(){
@@ -60,6 +63,8 @@ class Profile extends Component{
         document.getElementsByTagName('input').item(0).type = 'hidden';
         document.getElementsByTagName('input').item(1).type = 'hidden';
         document.getElementsByTagName('input').item(2).type = 'hidden';
+        document.getElementsByClassName('option-button').item(3).hidden = true;
+
     };
 
 
@@ -93,13 +98,12 @@ class Profile extends Component{
                                 <button className='option-button'>Undo</button>
                                 <button className='option-button'>Save Changes</button>
                             </div>
-
-
                         </div>
                         <div id='password' hidden={true}>
                             <input type='hidden' placeholder='Enter Old Password'/>
                             <input type='hidden' placeholder='Enter New Password'/>
                             <input type='hidden' placeholder='Confirm New Password'/>
+                            <button className='option-button' hidden={true}>Update Password</button>
                         </div>
                         <div id='liked' hidden={true}>
                             <h2>Previously Liked NGOs:</h2>
