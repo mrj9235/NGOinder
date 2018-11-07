@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0}
+body{
+/*Website colors:
+#5f6f6fff- gray
+#b0c0cfff- light blue
+#7090a0ff- darker blue*/
+    background: #b0c0cfff;
+    padding-top: 0px;
+}
+
+ul.list{
+    list-style-type: none;
+    background: #b0c0cfff;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    width: 250px;
+}
+
+ul.list li{
+    width:250px;
+    padding: 5px 0px;
+    position: center;
+}
+
+ul.list li input{
+    width:250px;
+    text-align: center;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 0px;
+    background-color: #e2e2e2;
+}
+
+.submit{
+    background-color: #2e5270;
+    color: #ffffff;
+}
+
+.highlight{
+    color: #0000EE;
+}

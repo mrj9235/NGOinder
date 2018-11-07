@@ -6,12 +6,13 @@ import Profile from "./Profile/Profile";
 import './App.css';
 import './Homepage/Homepage.css';
 import './Profile/Profile.css';
-import './Navbar/Navbar.css';
+import './'
+import './Navbar/Navbar.css'
+import './Login/Login.css';
 
 import {
     BrowserRouter,
-    Route,
-    Link
+    Route
 } from 'react-browser-router';
 
 
