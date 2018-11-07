@@ -4,7 +4,7 @@ class Search extends Component{
 
     search(){
         let term = window.location.href.split('=');
-        let name = "";
+        let name = " ";
         let content = ["100 Forests", "Abolition 2000", "Baha'i International Community", "Center of Concern",
         "Del Children's Hospital", "Extra Life", "The Franklin and Eleanor Roosevelt Institute",
         "GCS (Global Cooperation Society) International", "Habitat for Humanity",
@@ -20,22 +20,26 @@ class Search extends Component{
             name.concat(term[x])
         }
 
-        if(name[0] === ''){
+        if(name != " "){
+            for(let i = 0; i < content.size; i++){
+                if(content[i].includes(name)){
+                    let li = document.createElement('li');
+                    li.innerText = content[i];
+                    ul.appendChild(li);
+                }
+            }
             return(
-                <h3>
-                    No Results
-                </h3>
+                <div dangerouslySetInnerHTML={{__html: ul}}></div>
             )
         }
         else{
-            for(let i = 0; i < content.size; i++){
-                if(content[i].includes(name[0])){
-                    let li = <li>content[i]</li>;
-                    li.innerHTML = content[i];
-                    let newList = document.getElementById('result');
-                    newList.appendChild(li);
-                }
-            }
+            return(
+            <div>
+                <h3>
+                    No Results
+                </h3>
+            </div>
+            )
         }
     }
 
@@ -45,9 +49,7 @@ class Search extends Component{
                 <h2>
                     Search Results
                 </h2>
-                <ul id = 'result'>
-
-                </ul>
+                {this.search()}
             </body>
         )
     }
